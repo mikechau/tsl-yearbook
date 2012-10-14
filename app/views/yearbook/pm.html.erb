@@ -1,0 +1,10 @@
+<h1> WEB DEV PM STUDENTS </h1>
+
+<ul>
+<% @pm_students.each do |index| %>
+<li class='frame'>
+		<img class='thumbnail' src='http://codemountain.com<%= index["student"]["avatar_url"] %>'>
+	<p class='name'><%= index["student"]["name"] %></p>
+	<% end %>
+</li>
+</ul>

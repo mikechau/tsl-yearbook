@@ -1,0 +1,11 @@
+<h1> WEB DEV AM STUDENTS </h1>
+
+<ul>
+<% @am_students.each do |index| %>
+<li class='frame'>
+		<img class='thumbnail' src='http://codemountain.com<%= index["student"]["avatar_url"] %>'>
+	<p class='name'><%= index["student"]["name"] %></p>
+	<% end %>
+</li>
+</ul>
+
