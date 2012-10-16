@@ -1,4 +1,5 @@
 Yearbook::Application.routes.draw do
+root :to => 'Yearbook#index'
 get("/yearbook", :controller => 'Yearbook', :action => 'index')
 get("/am", :controller => 'Yearbook', :action => 'am')
 get("/pm", :controller => 'Yearbook', :action => 'pm')
