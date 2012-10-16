@@ -4,6 +4,7 @@ get("/am", :controller => 'Yearbook', :action => 'am')
 get("/pm", :controller => 'Yearbook', :action => 'pm')
 get("/rfd", :controller => 'Yearbook', :action => 'rfd')
 get("/all", :controller => 'Yearbook', :action => 'all')
+get("/pictures/:size/:color", :controller => 'Yearbook', :action => 'pictures')
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -53,7 +54,7 @@ get("/all", :controller => 'Yearbook', :action => 'all')
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+   root :to => 'Yearbook#index'
 
   # See how all your routes lay out with "rake routes"
 

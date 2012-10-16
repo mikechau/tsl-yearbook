@@ -31,4 +31,9 @@ class YearbookController < ApplicationController
 			@all_students = parse_students.delete_if { |h| h['student']['name'].nil? }.sort_by!{ |h| h['student']['name'].downcase }
 	end
 
+	def pictures
+		@size = params["size"]
+		@color = params["color"]
+	end
+
 end
